@@ -11,13 +11,11 @@
         <h1>🎬 Movie Recommender</h1>
 
         <div class="search-box">
-            <input 
-                type="text" 
-                id="queryInput" 
-                placeholder="Enter movie name..."
-            />
-            <button onclick="searchMovies()">Search</button>
+            <input type="text" id="queryInput" placeholder="Enter movie name..."/>
+            <button id="searchBtn" onclick="searchMovies()">Search</button>
         </div>
+
+        <div id="loader" class="loader hidden"></div>
 
         <div id="message" class="message"></div>
 
